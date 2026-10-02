@@ -3,7 +3,7 @@ import '../data.dart';
 import 'detail_page.dart';
 import 'profile_page.dart';
 
-// === MENGGUNAKAN STATELESSWIDGET (Aman, bersih, tanpa error widget.username) ===
+
 class HomePage extends StatelessWidget {
   final String username;
 
@@ -22,7 +22,6 @@ class HomePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  // Mengirim langsung username tanpa awalan 'widget.' karena ini StatelessWidget
                   builder: (context) => ProfilePage(username: username),
                 ),
               );
@@ -66,7 +65,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-          // === POIN: Menampilkan minimal 6 menu Shoe menggunakan ListView — 8 poin ===
+          // === POIN: Menampilkan minimal 6 menu Shoe menggunakan  ===
           Expanded(
             child: ListView.builder(
               itemCount: shoeCatalog.length,

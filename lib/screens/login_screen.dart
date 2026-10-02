@@ -30,7 +30,6 @@ class _LoginPageState extends State {
     }
 
     // === VALIDASI KHUSUS AKUN SPESIFIK ===
-    // Mengecek apakah username bernilai 'admingacoan' dan password bernilai '1221'
     if (username != 'nisrina' || password != '149') {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Username atau Password salah! (Gunakan admingacoan / 1221)')),

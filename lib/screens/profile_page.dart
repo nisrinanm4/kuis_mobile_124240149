@@ -13,7 +13,7 @@ class ProfilePage extends StatelessWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
-          // === KRITERIA PENILAIAN: Tampilan Profil rapi — 5 poin ===
+          // === KRITERIA PENILAIAN: Tampilan Profil rapi ===
           // Menggunakan Column dan Padding dengan penataan tengah (Center) agar terstruktur rapi
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +31,7 @@ class ProfilePage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               
-              // === KRITERIA PENILAIAN: Menampilkan username dari hasil Login, bukan hardcode — 12 poin ===
+              // === KRITERIA PENILAIAN: Menampilkan username dari hasil Login, bukan hardcode ===
               // Menampilkan data variabel 'username' secara dinamis, bukan teks statis
               Text(
                 username,

@@ -23,7 +23,6 @@ class DetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // === POIN 2 & 4: Menampilkan gambar, nama, kategori, harga, deskripsi & Tampilan rapi (8 + 3 poin) ===
             // Bagian Tampilan Gambar yang Rapi dengan sudut melengkung (Rounded Corners)
             Padding(
               padding: const EdgeInsets.all(16.0),
