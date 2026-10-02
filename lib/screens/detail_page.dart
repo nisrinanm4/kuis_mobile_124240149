@@ -49,7 +49,7 @@ class DetailPage extends StatelessWidget {
               ),
             ),
 
-            // Bagian Informasi Teks Detail Menu (Nama, Kategori, Harga, dan Deskripsi)
+            // Bagian Informasi Teks Detail Menu (Nama, Kategori, Harga, Jumlah Like, Stok,Ukuran dan Deskripsi)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
@@ -80,6 +80,68 @@ class DetailPage extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.green,
+                    ),
+                  ),
+                  // Menampilkan Jumlah Produk
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Jumlah Produk',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                   const SizedBox(height: 8),
+                  // Menampilkan Likes
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Likes:',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    'Likes.${menu.likes}',
+                    style: const TextStyle(
+                      fontSize: 15,
+                      height: 1.4,
+                      color: Colors.black87,
+                    ),
+                  ),
+                  // Menampilkan Stock
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Stock:',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    'Stock.${menu.stock}',
+                    style: const TextStyle(
+                      fontSize: 15,
+                      height: 1.4,
+                      color: Colors.black87,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Ukuran',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  // Menampilkan Sizes 
+                  Text(
+                    'Sizes.${menu.sizes}',
+                    style: const TextStyle(
+                      fontSize: 15,
+                      height: 1.4,
+                      color: Colors.black87,
                     ),
                   ),
                   const SizedBox(height: 20),
